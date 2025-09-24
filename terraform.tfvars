@@ -4,7 +4,6 @@ github_repositories = [
   "ansible-ksops",
   "cflan",
   "cluster",
-  "libvirt",
   "onion",
   "terraform-github-repos",
   "terraform-libvirt-infra",

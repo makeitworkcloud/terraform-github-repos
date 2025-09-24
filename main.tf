@@ -94,7 +94,6 @@ locals {
       value = data.sops_file.secret_vars.data["openshift_token"]
       repositories = [
         "cluster",
-        "libvirt",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -104,7 +103,6 @@ locals {
       value = data.sops_file.secret_vars.data["sops_age_key"]
       repositories = [
         "cluster",
-        "libvirt",
         "terraform-github-repos",
         "terraform-libvirt-infra"
       ]
@@ -114,7 +112,6 @@ locals {
       value = data.sops_file.secret_vars.data["ssh_private_key"]
       repositories = [
         "cluster",
-        "libvirt",
         "terraform-libvirt-infra"
       ]
     }
@@ -123,7 +120,6 @@ locals {
       value = data.sops_file.secret_vars.data["ssh_known_hosts"]
       repositories = [
         "cluster",
-        "libvirt",
         "terraform-libvirt-infra"
       ]
     }
