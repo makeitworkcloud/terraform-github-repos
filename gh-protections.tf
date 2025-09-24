@@ -25,6 +25,7 @@ resource "github_branch_protection" "protections" {
     require_code_owner_reviews      = true
     required_approving_review_count = 1
     require_last_push_approval      = true
+    restrict_dismissals             = true
   }
   restrict_pushes {
     push_allowances = [
