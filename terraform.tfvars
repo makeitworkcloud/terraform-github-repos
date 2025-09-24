@@ -4,7 +4,7 @@ github_repositories = [
   "ansible-site-torwww",
   "ansible-role-crc",
   "ansible-role-ksops",
-  "gitops-cluster-config",
+  "gitops-cluster",
   "cflan",
   "cluster",
   "onion",
