@@ -49,7 +49,6 @@ locals {
       value = data.sops_file.secret_vars.data["cloudflare_auth_client_id"]
       repositories = [
         "cluster",
-        "repos",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -59,7 +58,6 @@ locals {
       value = data.sops_file.secret_vars.data["cloudflare_auth_client_secret"]
       repositories = [
         "cluster",
-        "repos",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -69,7 +67,6 @@ locals {
       value = data.sops_file.secret_vars.data["openshift_server_url"]
       repositories = [
         "cluster",
-        "repos",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -79,7 +76,6 @@ locals {
       value = data.sops_file.secret_vars.data["openshift_username"]
       repositories = [
         "cluster",
-        "repos",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -89,7 +85,6 @@ locals {
       value = data.sops_file.secret_vars.data["openshift_password"]
       repositories = [
         "cluster",
-        "repos",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -99,7 +94,7 @@ locals {
       value = data.sops_file.secret_vars.data["openshift_token"]
       repositories = [
         "cluster",
-        "repos",
+        "libvirt",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -110,8 +105,8 @@ locals {
       repositories = [
         "cluster",
         "libvirt",
-        "repos",
-        "terraform-github-repos"
+        "terraform-github-repos",
+        "terraform-libvirt-infra"
       ]
     }
     "ssh_private_key" = {
@@ -119,7 +114,8 @@ locals {
       value = data.sops_file.secret_vars.data["ssh_private_key"]
       repositories = [
         "cluster",
-        "libvirt"
+        "libvirt",
+        "terraform-libvirt-infra"
       ]
     }
     "ssh_known_hosts" = {
@@ -127,7 +123,8 @@ locals {
       value = data.sops_file.secret_vars.data["ssh_known_hosts"]
       repositories = [
         "cluster",
-        "libvirt"
+        "libvirt",
+        "terraform-libvirt-infra"
       ]
     }
     "ssh_user" = {
