@@ -6,9 +6,8 @@ github_repositories = [
   "cluster",
   "libvirt",
   "onion",
-  "repos",
   "terraform-github-repos",
-  "terraform-libvirt",
+  "terraform-libvirt-infra",
   "terraform-runner",
   "torwww",
   "www"
