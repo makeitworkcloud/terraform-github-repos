@@ -1,5 +1,6 @@
 github_repositories = [
   ".github",
+  "aap-libvirt-infra",
   "ansible-site-cluster",
   "ansible-site-torwww",
   "ansible-role-crc",
