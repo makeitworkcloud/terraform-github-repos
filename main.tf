@@ -108,6 +108,7 @@ locals {
       name  = "SOPS_AGE_KEY"
       value = data.sops_file.secret_vars.data["sops_age_key"]
       repositories = [
+        "aap-libvirt-infra",
         "ansible-site-cluster",
         "cluster",
         "terraform-github-repos",
