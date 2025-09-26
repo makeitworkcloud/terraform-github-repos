@@ -12,6 +12,5 @@ github_repositories = [
   "terraform-github-repos",
   "terraform-libvirt-infra",
   "terraform-runner",
-  "torwww",
   "www"
 ]
