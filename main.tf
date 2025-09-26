@@ -49,7 +49,6 @@ locals {
       value = data.sops_file.secret_vars.data["cloudflare_auth_client_id"]
       repositories = [
         "ansible-site-cluster",
-        "cluster",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -59,7 +58,6 @@ locals {
       value = data.sops_file.secret_vars.data["cloudflare_auth_client_secret"]
       repositories = [
         "ansible-site-cluster",
-        "cluster",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -69,7 +67,6 @@ locals {
       value = data.sops_file.secret_vars.data["openshift_server_url"]
       repositories = [
         "ansible-site-cluster",
-        "cluster",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -79,7 +76,6 @@ locals {
       value = data.sops_file.secret_vars.data["openshift_username"]
       repositories = [
         "ansible-site-cluster",
-        "cluster",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -89,7 +85,6 @@ locals {
       value = data.sops_file.secret_vars.data["openshift_password"]
       repositories = [
         "ansible-site-cluster",
-        "cluster",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -99,7 +94,6 @@ locals {
       value = data.sops_file.secret_vars.data["openshift_token"]
       repositories = [
         "ansible-site-cluster",
-        "cluster",
         "terraform-github-repos",
         "terraform-runner"
       ]
@@ -110,7 +104,6 @@ locals {
       repositories = [
         "aap-libvirt-infra",
         "ansible-site-cluster",
-        "cluster",
         "terraform-github-repos",
         "terraform-libvirt-infra"
       ]
@@ -120,7 +113,6 @@ locals {
       value = data.sops_file.secret_vars.data["ssh_private_key"]
       repositories = [
         "ansible-site-cluster",
-        "cluster",
         "terraform-libvirt-infra"
       ]
     }
@@ -129,7 +121,6 @@ locals {
       value = data.sops_file.secret_vars.data["ssh_known_hosts"]
       repositories = [
         "ansible-site-cluster",
-        "cluster",
         "terraform-libvirt-infra"
       ]
     }
@@ -137,16 +128,14 @@ locals {
       name  = "SSH_USER"
       value = data.sops_file.secret_vars.data["ssh_user"]
       repositories = [
-        "ansible-site-cluster",
-        "cluster"
+        "ansible-site-cluster"
       ]
     }
     "ssh_host" = {
       name  = "SSH_HOST"
       value = data.sops_file.secret_vars.data["ssh_host"]
       repositories = [
-        "ansible-site-cluster",
-        "cluster"
+        "ansible-site-cluster"
       ]
     }
   }

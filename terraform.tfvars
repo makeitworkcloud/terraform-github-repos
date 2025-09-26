@@ -7,7 +7,6 @@ github_repositories = [
   "ansible-role-ksops",
   "gitops-cluster",
   "cflan",
-  "cluster",
   "onion",
   "terraform-github-repos",
   "terraform-libvirt-infra",
