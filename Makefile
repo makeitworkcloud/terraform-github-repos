@@ -49,7 +49,7 @@ apply: test plan
 	@rm -f .terraform/plan
 
 migrate:
-	@echo "First use `make init` using the old S3 backend, then run `make migrate` to use the new one."
+	@echo "First use -make init- using the old S3 backend, then run -make migrate- to use the new one."
 	@${TERRAFORM} init -migrate-state -backend-config="key=${S3_KEY}" -backend-config="bucket=${S3_BUCKET}" -backend-config="region=${S3_REGION}" -backend-config="access_key=${S3_ACCESS_KEY}" -backend-config="secret_key=${S3_SECRET_KEY}"
 
 test: .git/hooks/pre-commit
