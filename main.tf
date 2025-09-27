@@ -118,6 +118,7 @@ locals {
       repositories = [
         "aap-libvirt-infra",
         "ansible-site-cluster",
+        "terraform-aws-infra",
         "terraform-github-repos",
         "terraform-libvirt-infra"
       ]
