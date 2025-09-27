@@ -11,6 +11,7 @@ locals {
     "ansible-role-ksops",
     "gitops-cluster",
     "cflan",
+    "terraform-aws-infra",
     "terraform-github-repos",
     "terraform-libvirt-infra",
     "terraform-runner",
