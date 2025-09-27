@@ -1,13 +1,13 @@
 /*
 import {
-  for_each = var.github_repositories
+  for_each = local.github_repositories
   to       = github_branch_protection.protections[each.key]
   id       = "${each.key}:main"
 }
 */
 
 resource "github_branch_protection" "protections" {
-  for_each                        = var.github_repositories
+  for_each                        = local.github_repositories
   repository_id                   = github_repository.repositories[each.key].node_id
   pattern                         = "main"
   enforce_admins                  = true

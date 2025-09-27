@@ -31,7 +31,6 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_github_owner"></a> [github\_owner](#input\_github\_owner) | The GitHub owner (user or organization) for the repository. | `string` | `"makeitworkcloud"` | no |
-| <a name="input_github_repositories"></a> [github\_repositories](#input\_github\_repositories) | Set of GitHub repositories to manage | `set(string)` | `[]` | no |
 | <a name="input_github_visibility"></a> [github\_visibility](#input\_github\_visibility) | Public, private, or internal visibility | `string` | `"public"` | no |
 
 ## Outputs

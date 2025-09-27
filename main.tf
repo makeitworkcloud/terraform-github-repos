@@ -3,6 +3,20 @@ data "sops_file" "secret_vars" {
 }
 
 locals {
+  github_repositories = toset([
+    ".github",
+    "aap-libvirt-infra",
+    "ansible-site-cluster",
+    "ansible-role-crc",
+    "ansible-role-ksops",
+    "gitops-cluster",
+    "cflan",
+    "onion",
+    "terraform-github-repos",
+    "terraform-libvirt-infra",
+    "terraform-runner",
+    "www"
+  ])
   secrets = {
     "onion_s3_bucket" = {
       name         = "AWS_S3_BUCKET"

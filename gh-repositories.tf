@@ -1,13 +1,13 @@
 /*
 import {
-  for_each = var.github_repositories
+  for_each = local.github_repositories
   to       = github_repository.repositories[each.key]
   id       = each.key
 }
 */
 
 resource "github_repository" "repositories" {
-  for_each   = var.github_repositories
+  for_each   = local.github_repositories
   name       = each.key
   visibility = var.github_visibility
   lifecycle {
