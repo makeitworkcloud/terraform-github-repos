@@ -11,7 +11,6 @@ locals {
     "ansible-role-ksops",
     "gitops-cluster",
     "cflan",
-    "onion",
     "terraform-github-repos",
     "terraform-libvirt-infra",
     "terraform-runner",
@@ -19,24 +18,24 @@ locals {
   ])
   secrets = {
     "onion_s3_bucket" = {
-      name         = "AWS_S3_BUCKET"
+      name         = "ONION_AWS_S3_BUCKET"
       value        = data.sops_file.secret_vars.data["onion_s3_bucket"]
-      repositories = ["onion"]
+      repositories = ["www"]
     }
     "onion_aws_region" = {
-      name         = "AWS_REGION"
+      name         = "ONION_AWS_REGION"
       value        = data.sops_file.secret_vars.data["onion_aws_region"]
-      repositories = ["onion"]
+      repositories = ["www"]
     }
     "onion_access_key_id" = {
-      name         = "AWS_ACCESS_KEY_ID"
+      name         = "ONION_AWS_ACCESS_KEY_ID"
       value        = data.sops_file.secret_vars.data["onion_aws_access_key_id"]
-      repositories = ["onion"]
+      repositories = ["www"]
     }
     "onion_secret_access_key" = {
-      name         = "AWS_SECRET_ACCESS_KEY"
+      name         = "ONION_AWS_SECRET_ACCESS_KEY"
       value        = data.sops_file.secret_vars.data["onion_aws_secret_access_key"]
-      repositories = ["onion"]
+      repositories = ["www"]
     }
     "www_s3_bucket" = {
       name         = "AWS_S3_BUCKET"
