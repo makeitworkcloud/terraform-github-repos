@@ -12,6 +12,7 @@ locals {
     "gitops-cluster",
     "cflan",
     "terraform-aws-infra",
+    "terraform-cloudflare-infra",
     "terraform-github-repos",
     "terraform-libvirt-infra",
     "terraform-runner",
@@ -119,6 +120,7 @@ locals {
         "aap-libvirt-infra",
         "ansible-site-cluster",
         "terraform-aws-infra",
+        "terraform-cloudflare-infra",
         "terraform-github-repos",
         "terraform-libvirt-infra"
       ]
